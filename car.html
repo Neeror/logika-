@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MotorElite</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,600&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="car.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo">Motor<span class="logo-g">Elite</span></a>
+  <nav>
+    <ul class="nav-ul">
+      <li><a href="index.html">Каталог</a></li>
+      <li><a href="index.html">Нові авто</a></li>
+      <li><a href="index.html">З пробігом</a></li>
+      <li><a href="index.html">Фінансування</a></li>
+      <li><a href="index.html">Контакти</a></li>
+    </ul>
+  </nav>
+  <button class="nav-btn">Тест-драйв</button>
+</header>
+
+<main>
+
+  <section class="car-hero">
+    <a href="index.html" class="car-back">← До каталогу</a>
+    <figure class="car-hero-fig">
+      <img id="js-img" src="" alt="">
+    </figure>
+    <div class="car-hero-info">
+      <span id="js-badge" class="card-tag"></span>
+      <p id="js-brand" class="car-hero-brand"></p>
+      <h1 id="js-name" class="car-hero-name"></h1>
+      <p id="js-price" class="car-hero-price"></p>
+      <div class="car-hero-actions">
+        <button class="btn-fill car-cta" onclick="document.querySelector('.car-form-section').scrollIntoView({behavior:'smooth'})">Записатись на тест-драйв</button>
+        <a href="tel:+380441234567" class="btn-ghost">Зателефонувати <span class="circle-arr">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="car-content">
+    <div class="car-desc">
+      <p class="sec-label">Про автомобіль</p>
+      <h2 id="js-title" class="sec-h2"></h2>
+      <p id="js-desc" class="car-desc-text"></p>
+      <hr class="car-divider">
+      <p class="sec-label" style="margin-top:32px">Технічні характеристики</p>
+      <table id="js-specs" class="car-specs-tbl"></table>
+    </div>
+    <aside class="car-sidebar">
+      <ul id="js-quick" class="car-quick"></ul>
+      <button class="btn-fill car-cta" onclick="document.querySelector('.car-form-section').scrollIntoView({behavior:'smooth'})">Записатись на тест-драйв</button>
+      <a href="tel:+380441234567" class="car-phone">+38 (044) 123-45-67</a>
+    </aside>
+  </section>
+
+  <section class="car-form-section">
+    <div class="car-form-wrap">
+      <div>
+        <p class="sec-label">Зворотній зв'язок</p>
+        <h2 class="sec-h2">Записатись на <em>тест-драйв</em></h2>
+        <p class="car-form-sub">Залиште свої контакти і ми зателефонуємо протягом 30 хвилин для підтвердження запису.</p>
+      </div>
+      <form class="car-form" id="js-form">
+        <input type="text" placeholder="Ваше ім'я" class="car-input" required>
+        <input type="tel" placeholder="Номер телефону" class="car-input" required>
+        <input type="date" class="car-input">
+        <button type="submit" class="btn-fill">Надіслати заявку →</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="car-related">
+    <p class="sec-label">Схожі автомобілі</p>
+    <h2 class="sec-h2">Вам може <em>сподобатись</em></h2>
+    <ul id="js-related" class="cars-grid"></ul>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <section class="foot-grid">
+    <div class="foot-brand">
+      <a href="index.html" class="foot-logo">Motor<span style="color:var(--gold)">Elite</span></a>
+      <p class="foot-desc">Офіційний дилер преміум автомобілів. Широкий вибір нових та авто з пробігом із гарантією якості та прозорою історією.</p>
+      <ul class="foot-soc">
+        <li><a href="#" class="soc-btn">IN</a></li>
+        <li><a href="#" class="soc-btn">FB</a></li>
+        <li><a href="#" class="soc-btn">IG</a></li>
+        <li><a href="#" class="soc-btn">YT</a></li>
+      </ul>
+    </div>
+    <section>
+      <h3 class="col-t">Каталог</h3>
+      <ul class="col-ul">
+        <li><a href="index.html">Нові автомобілі</a></li>
+        <li><a href="index.html">З пробігом</a></li>
+        <li><a href="index.html">Електромобілі</a></li>
+        <li><a href="index.html">SUV / Кросовери</a></li>
+        <li><a href="index.html">Спортивні авто</a></li>
+      </ul>
+    </section>
+    <section>
+      <h3 class="col-t">Послуги</h3>
+      <ul class="col-ul">
+        <li><a href="#">Тест-драйв</a></li>
+        <li><a href="#">Трейд-ін</a></li>
+        <li><a href="#">Кредитування</a></li>
+        <li><a href="#">Страхування</a></li>
+        <li><a href="#">Сервіс</a></li>
+      </ul>
+    </section>
+    <section>
+      <h3 class="col-t">Інформація</h3>
+      <ul class="col-ul">
+        <li><a href="#">Про нас</a></li>
+        <li><a href="#">Сертифікати</a></li>
+        <li><a href="#">Відгуки</a></li>
+        <li><a href="#">Новини</a></li>
+        <li><a href="#">Контакти</a></li>
+      </ul>
+    </section>
+  </section>
+  <p class="foot-bottom">
+    <small class="foot-copy">© 2024 MotorElite. Всі права захищені.</small>
+    <small class="foot-copy">Ліцензія №АВ 123456 · Київ, Україна</small>
+  </p>
+</footer>
+
+<script src="cars-data.js"></script>
+<script src="car.js"></script>
+</body>
+</html>

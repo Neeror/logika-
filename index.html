@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotorElite — Преміум Автосалон</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,600&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  
+  <header>
+    <a href="#" class="logo">Motor<span class="logo-g">Elite</span></a>
+    <nav>
+      <ul class="nav-ul">
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Нові авто</a></li>
+        <li><a href="#">З пробігом</a></li>
+        <li><a href="#">Фінансування</a></li>
+        <li><a href="#">Контакти</a></li>
+      </ul>
+    </nav>
+    <button class="nav-btn">Тест-драйв</button>
+  </header>
+  
+  <main>
+  
+    <section class="hero">
+      <figure class="hero-img-wrap">
+        <img class="hero-img" src="hero.jpg" alt="">
+      </figure>
+      <div class="hero-body">
+        <p class="eyebrow">
+          <span class="eyebrow-line"></span>
+          <span class="eyebrow-t">Преміум Автосалон</span>
+        </p>
+        <h1 class="hero-h1">
+          Розкіш
+          <em>у кожній</em>
+          деталі.
+        </h1>
+        <p class="hero-p">
+          Виключна колекція преміум та суперкарів.
+          Офіційний дилер провідних світових брендів
+          з гарантією та повним сервісним супроводом.
+        </p>
+        <p class="hero-btns">
+          <button class="btn-fill">Переглянути каталог</button>
+          <a href="#" class="btn-ghost">
+            Детальніше
+            <span class="circle-arr">→</span>
+          </a>
+        </p>
+      </div>
+      <dl class="hero-stats">
+        <div>
+          <dt class="stat-l">Автомобілів</dt>
+          <dd class="stat-n">180+</dd>
+        </div>
+        <div>
+          <dt class="stat-l">Брендів</dt>
+          <dd class="stat-n">15</dd>
+        </div>
+        <div>
+          <dt class="stat-l">Років досвіду</dt>
+          <dd class="stat-n">8</dd>
+        </div>
+      </dl>
+    </section>
+  
+    <section class="fbar">
+      <button class="fitem">
+        <span class="fitem-label">Бренд</span>
+        <span class="fitem-val">Всі бренди <span class="fchev">▾</span></span>
+      </button>
+      <button class="fitem">
+        <span class="fitem-label">Тип кузова</span>
+        <span class="fitem-val">Будь-який <span class="fchev">▾</span></span>
+      </button>
+      <button class="fitem">
+        <span class="fitem-label">Ціна, ₴</span>
+        <span class="fitem-val">До 10 000 000 <span class="fchev">▾</span></span>
+      </button>
+      <button class="fitem">
+        <span class="fitem-label">Рік випуску</span>
+        <span class="fitem-val">2020 — 2024 <span class="fchev">▾</span></span>
+      </button>
+      <button class="fsearch">Знайти авто</button>
+    </section>
+  
+    <section class="catalog">
+      <header class="sec-top">
+        <div>
+          <p class="sec-label">Наш каталог</p>
+          <h2 class="sec-h2">Обрані <em>автомобілі</em></h2>
+        </div>
+        <a href="#" class="view-all">Всі автомобілі →</a>
+      </header>
+      <nav class="brand-tabs">
+        <button class="tab-btn on" data-brand="all">Всі</button>
+        <button class="tab-btn" data-brand="BMW">BMW</button>
+        <button class="tab-btn" data-brand="Mercedes-Benz">Mercedes-Benz</button>
+        <button class="tab-btn" data-brand="Porsche">Porsche</button>
+        <button class="tab-btn" data-brand="Audi">Audi</button>
+        <button class="tab-btn" data-brand="Range Rover">Range Rover</button>
+        <button class="tab-btn" data-brand="Tesla">Tesla</button>
+      </nav>
+      <ul class="cars-grid">
+  
+        <li>
+          <article class="card" data-brand="BMW">
+            <figure class="card-img">
+              <img src="car-bmw.jpg" alt="BMW M5 Competition">
+              <span class="card-tag">НОВИНКА</span>
+            </figure>
+            <div class="card-body">
+              <p class="card-brand">BMW · 2024</p>
+              <h3 class="card-model">M5 Competition</h3>
+              <dl class="card-specs">
+                <div><dt class="spec-k">Потужність</dt><dd class="spec-v">625 к.с.</dd></div>
+                <div><dt class="spec-k">Кузов</dt><dd class="spec-v">Седан</dd></div>
+                <div><dt class="spec-k">Паливо</dt><dd class="spec-v">Бензин</dd></div>
+              </dl>
+              <footer class="card-foot">
+                <p><strong class="card-price">₴4 850 000</strong><span class="price-unit">грн</span></p>
+                <span class="card-arr">→</span>
+              </footer>
+            </div>
+          </article>
+        </li>
+  
+        <li>
+          <article class="card" data-brand="Mercedes-Benz">
+            <figure class="card-img">
+              <img src="car-mercedes.jpg" alt="Mercedes-Benz AMG GT 63 S">
+              <span class="card-tag">ТОП</span>
+            </figure>
+            <div class="card-body">
+              <p class="card-brand">Mercedes-Benz · 2024</p>
+              <h3 class="card-model">AMG GT 63 S</h3>
+              <dl class="card-specs">
+                <div><dt class="spec-k">Потужність</dt><dd class="spec-v">630 к.с.</dd></div>
+                <div><dt class="spec-k">Кузов</dt><dd class="spec-v">Купе</dd></div>
+                <div><dt class="spec-k">Паливо</dt><dd class="spec-v">Бензин</dd></div>
+              </dl>
+              <footer class="card-foot">
+                <p><strong class="card-price">₴5 200 000</strong><span class="price-unit">грн</span></p>
+                <span class="card-arr">→</span>
+              </footer>
+            </div>
+          </article>
+        </li>
+  
+        <li>
+          <article class="card" data-brand="Porsche">
+            <figure class="card-img">
+              <img src="car-porsche.jpg" alt="Porsche Cayenne Turbo GT">
+            </figure>
+            <div class="card-body">
+              <p class="card-brand">Porsche · 2024</p>
+              <h3 class="card-model">Cayenne Turbo GT</h3>
+              <dl class="card-specs">
+                <div><dt class="spec-k">Потужність</dt><dd class="spec-v">640 к.с.</dd></div>
+                <div><dt class="spec-k">Кузов</dt><dd class="spec-v">SUV</dd></div>
+                <div><dt class="spec-k">Паливо</dt><dd class="spec-v">Бензин</dd></div>
+              </dl>
+              <footer class="card-foot">
+                <p><strong class="card-price">₴7 100 000</strong><span class="price-unit">грн</span></p>
+                <span class="card-arr">→</span>
+              </footer>
+            </div>
+          </article>
+        </li>
+  
+        <li>
+          <article class="card" data-brand="Audi">
+            <figure class="card-img">
+              <img src="car-audi.jpg" alt="Audi RS7 Sportback">
+              <span class="card-tag">В НАЯВНОСТІ</span>
+            </figure>
+            <div class="card-body">
+              <p class="card-brand">Audi · 2024</p>
+              <h3 class="card-model">RS7 Sportback</h3>
+              <dl class="card-specs">
+                <div><dt class="spec-k">Потужність</dt><dd class="spec-v">600 к.с.</dd></div>
+                <div><dt class="spec-k">Кузов</dt><dd class="spec-v">Седан</dd></div>
+                <div><dt class="spec-k">Паливо</dt><dd class="spec-v">Бензин</dd></div>
+              </dl>
+              <footer class="card-foot">
+                <p><strong class="card-price">₴4 650 000</strong><span class="price-unit">грн</span></p>
+                <span class="card-arr">→</span>
+              </footer>
+            </div>
+          </article>
+        </li>
+  
+        <li>
+          <article class="card" data-brand="Range Rover">
+            <figure class="card-img">
+              <img src="car-range-rover.jpg" alt="Range Rover Sport SVR">
+            </figure>
+            <div class="card-body">
+              <p class="card-brand">Range Rover · 2023</p>
+              <h3 class="card-model">Sport SVR</h3>
+              <dl class="card-specs">
+                <div><dt class="spec-k">Потужність</dt><dd class="spec-v">575 к.с.</dd></div>
+                <div><dt class="spec-k">Кузов</dt><dd class="spec-v">SUV</dd></div>
+                <div><dt class="spec-k">Паливо</dt><dd class="spec-v">Бензин</dd></div>
+              </dl>
+              <footer class="card-foot">
+                <p><strong class="card-price">₴6 300 000</strong><span class="price-unit">грн</span></p>
+                <span class="card-arr">→</span>
+              </footer>
+            </div>
+          </article>
+        </li>
+  
+        <li>
+          <article class="card" data-brand="Tesla">
+            <figure class="card-img">
+              <img src="car-tesla.jpg" alt="Tesla Model S Plaid">
+              <span class="card-tag">ЕЛЕКТРО</span>
+            </figure>
+            <div class="card-body">
+              <p class="card-brand">Tesla · 2024</p>
+              <h3 class="card-model">Model S Plaid</h3>
+              <dl class="card-specs">
+                <div><dt class="spec-k">Потужність</dt><dd class="spec-v">1020 к.с.</dd></div>
+                <div><dt class="spec-k">Кузов</dt><dd class="spec-v">Седан</dd></div>
+                <div><dt class="spec-k">Паливо</dt><dd class="spec-v">Електро</dd></div>
+              </dl>
+              <footer class="card-foot">
+                <p><strong class="card-price">₴3 900 000</strong><span class="price-unit">грн</span></p>
+                <span class="card-arr">→</span>
+              </footer>
+            </div>
+          </article>
+        </li>
+  
+      </ul>
+    </section>
+  
+    <section class="brands-strip">
+      <ul class="brands-row">
+        <li class="brand-nm">BMW</li>
+        <li class="brand-nm">Mercedes-Benz</li>
+        <li class="brand-nm">Porsche</li>
+        <li class="brand-nm">Audi</li>
+        <li class="brand-nm">Lamborghini</li>
+        <li class="brand-nm">Ferrari</li>
+        <li class="brand-nm">Bentley</li>
+        <li class="brand-nm">Rolls-Royce</li>
+        <li class="brand-nm">McLaren</li>
+        <li class="brand-nm">Aston Martin</li>
+      </ul>
+    </section>
+  
+    <section class="promo">
+      <img src="promo.jpg" alt="">
+      <div class="promo-body">
+        <p class="promo-tag">Спеціальна пропозиція</p>
+        <h2 class="promo-h">Вигідне <em>фінансування</em></h2>
+        <p class="promo-sub">
+          0% першочерговий внесок на обрані моделі.
+          Розстрочка до 84 місяців без переплат.
+        </p>
+        <button class="btn-fill">Дізнатись більше</button>
+      </div>
+    </section>
+  
+  </main>
+  
+  <footer class="foot">
+    <section class="foot-grid">
+      <div class="foot-brand">
+        <a href="#" class="foot-logo">Motor<span style="color: var(--gold)">Elite</span></a>
+        <p class="foot-desc">
+          Офіційний дилер преміум автомобілів. Широкий вибір нових та авто з пробігом із гарантією якості та прозорою історією.
+        </p>
+        <ul class="foot-soc">
+          <li><a href="#" class="soc-btn">IN</a></li>
+          <li><a href="#" class="soc-btn">FB</a></li>
+          <li><a href="#" class="soc-btn">IG</a></li>
+          <li><a href="#" class="soc-btn">YT</a></li>
+        </ul>
+      </div>
+      <section>
+        <h3 class="col-t">Каталог</h3>
+        <ul class="col-ul">
+          <li><a href="#">Нові автомобілі</a></li>
+          <li><a href="#">З пробігом</a></li>
+          <li><a href="#">Електромобілі</a></li>
+          <li><a href="#">SUV / Кросовери</a></li>
+          <li><a href="#">Спортивні авто</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3 class="col-t">Послуги</h3>
+        <ul class="col-ul">
+          <li><a href="#">Тест-драйв</a></li>
+          <li><a href="#">Трейд-ін</a></li>
+          <li><a href="#">Кредитування</a></li>
+          <li><a href="#">Страхування</a></li>
+          <li><a href="#">Сервіс</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3 class="col-t">Інформація</h3>
+        <ul class="col-ul">
+          <li><a href="#">Про нас</a></li>
+          <li><a href="#">Сертифікати</a></li>
+          <li><a href="#">Відгуки</a></li>
+          <li><a href="#">Новини</a></li>
+          <li><a href="#">Контакти</a></li>
+        </ul>
+      </section>
+    </section>
+    <p class="foot-bottom">
+      <small class="foot-copy">© 2024 MotorElite. Всі права захищені.</small>
+      <small class="foot-copy">Ліцензія №АВ 123456 · Київ, Україна</small>
+    </p>
+  </footer>
+  
+  <script src="script.js"></script>
+  </body>
+</html>
